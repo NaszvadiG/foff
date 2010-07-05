@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Take a leave</title>
+<style type="text/css">
+body {background-color: #232; color: #CCC;}
+</style>
+</head>
+<body>
+<h1>Take a leave</h1>
+	<form method="post" action="/leave" name="leave-form" id="leave-form">
+	<label for="leave-type">Type</label>
+	<select id="leave-type" name="leave-type">
+		<option>Short leave (2 hours)</option>
+		<option>Half leave (4 hours)</option>
+		<option>Full leave (8 hours)</option>
+		</select>
+	<label for="leave-date">For</label>
+	<!-- For 2 and 4 hours leave, we just take time in 12 hour format without AM/PM because we know our operating times are 10-7.
+	And as far as the date is concerned, if its for today, 
+	then it is today. yesterday can also be used and so is tomorrow.
+	otherwise its a singel date.
+	or a date range.
+	
+	 
+	-->
+	<input type="datetime" name="leave-date" id="leave-date"/>
+	<input type="submit" value="Go off!"/>
+	</form>
+</body>
+</html>
