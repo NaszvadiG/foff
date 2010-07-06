@@ -5,6 +5,57 @@
 <style type="text/css">
 body {background-color: #232; color: #CCC;}
 </style>
+<script type="text/javascript" src="date.js"></script>
+<script type="text/javascript">
+
+function getDates(date_string){
+ var rangeReg = /(from|between)?(.+)(to|and)(.+)/i;
+
+  var match = rangeReg.exec(date_string);
+
+  if(match){
+    var date1 = null;
+    var date2 = null;
+    console.debug("String matched")
+    /* if the from or between clause is used */
+    if(match.length == 5){
+      console.debug("It was a from/between date");
+      date1 = match[2];
+      date2 = match[4];
+    }
+   else if(match.length == 4){
+   console.debug("It was a date without from/between");
+    date1 = match[1];
+    date2 = match[2]
+   }
+   console.debug("Date1 is " + date1);
+   console.debug("Date2 is " + date2);
+   return gap(date1, date2);
+  }
+}
+function gap( date1, date2) {
+
+  if(typeof(date1) == "string"){
+    date1 = date1.replace(/^\s+/,"");
+    date1 = date1.replace(/\s+$/, "");
+    date1 = Date.parse(date1);
+    console.debug("Date 1 was string. Parsed and got " + date1.toString());
+  }
+
+  if(typeof(date2) == "string"){
+    date2 = date2.replace(/^\s+/, "");
+    date2 = date2.replace(/\s+$/, "");
+    date2 = Date.parse(date2);
+    console.debug("Date 2 was string. Parsed and got " + date2.toString());
+}
+
+  var ONE_DAY = 1000 * 60 * 60 * 24;
+  var d1 = date1.getTime();
+  var d2 = date2.getTime();
+  var diff = Math.abs(date2 - date1);
+  return Math.round(diff / ONE_DAY);
+}
+</script>
 </head>
 <body>
 <h1>Take a leave</h1>
