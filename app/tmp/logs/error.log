@@ -1,0 +1,6 @@
+2010-07-07 17:16:46 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/persistent/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
+2010-07-07 17:16:46 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/models/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
+2010-07-07 17:18:51 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/persistent/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
+2010-07-07 17:18:51 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/models/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
+2010-07-07 17:18:55 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/persistent/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
+2010-07-07 17:18:55 Warning: Warning (512): /home/mohsinhijazee/Projects/PHP/foff/app/tmp/cache/models/ is not writable in [/home/mohsinhijazee/Projects/PHP/foff/cake/libs/cache/file.php, line 267]
