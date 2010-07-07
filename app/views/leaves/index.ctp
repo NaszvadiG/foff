@@ -1,4 +1,5 @@
 <h1>All leaves</h1>
+<?php echo `whoami` ?>
 <table>
   <tr>
     <th>User</th>
